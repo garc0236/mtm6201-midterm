@@ -1,4 +1,23 @@
-body{
-    color:aqua;
+/*target the font family in whole pages */
+
+html{
+    font-family:sans-serif;
+}
+/*modifies the top area of the page*/
+
+.heading{
+    background-color: rgb(162, 117, 204);
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+
+
+
+
+
+.footer{
     background-color: black;
+    height: 60px;
 }
