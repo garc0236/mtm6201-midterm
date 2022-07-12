@@ -16,7 +16,32 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <img src="images/creamsy-logo.png" alt="logo">        
-        </header> 
-    
+        </header>
+        <div class="form">
+            <form action="sent.html" method="get"> <!--creates form for contacting-->
+                <h2>Send us a message</h2>
+                <div class="dname"> <!--adding box for name area with a class-->
+                    <label for="yourname" class="tname">Full Name</label>
+                    <input class="bname" type="text" id="yourname" name="yourname">
+                </div>
+                 <div class="demail"> <!--adding box for email area with a class -->
+                    <label for="youremail" class="temail">Email</label>
+                    <input class="bemail" type="text" id="youremail" name="youremail">
+                </div>
+                <div class="dmess">
+                    <label for="yourmessage" class="tmessage">Message</label> <!--adding box for message area  with a class-->
+                    <input class="bmessage" type="text" id="yourmessage" name="yourmessage">
+                </div>
+                <div class="dbutton"> <!--adding "send" button with a class-->
+                    <button class="button" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+             <p class="pfooter">Camilo Garcia 2022</p>
+        </footer>
+    </div>
 </body>
 </html>
