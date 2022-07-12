@@ -17,16 +17,49 @@
             </ul>
 
             <picture>
-                <source srcset="images/"
-                <img class="logo" src="images/creamsy-logo.png" alt="logo">
+                <source srcset="
+                images/creamsy-logo-240_x_185.png,
+                images/creamsy-logo-480_x_370.png 2x,
+                images/creamsy-logo-960_x_741.png 3x" media="(max-width:960px)">
+                <img class="logo" src="images/creamsy-logo-480_x_370.png" alt="logo">
             </picture>        
         </header>
         <div class="banner"> <!--creates the banner part of the page with different images as shown in picture-->
-            <img src="images/icecream-y.jpg" alt="ice cream yellow">
-            <img src="images/woman-purple.jpg" alt="woman 1">
-            <img src="images/icrecream-w.jpg" alt="ice cream white">
-            <img src="images/woman-yellow.jpg" alt="woman 2">
-            <img src="images/icecream-p.jpg" alt="ice cream purple">
+            <picture> <!--the images, scales at different screen sizes, and resolution-->
+                <source srcset="
+                images/icecream-y-160_x_240.jpg,
+                images/icecream-y-320_x_480.jpg,
+                images/icecream-y-640_x_960.jpg" media="(max-width:640px)">
+                <img src="images/icecream-y-320_x_480.jpg" alt="ice cream yellow">
+            </picture>
+            <picture>
+                <source srcset="
+                images/woman-purple-160_x_240.jpg,
+                images/woman-purple-320_x_480.jpg,
+                images/woman-purple-640_x_960.jpg" media="(max-width:640px)">
+                <img src="images/woman-purple-320_x_480.jpg" alt="woman 1">
+            </picture>
+            <picture>
+                <source srcset="
+                images/icrecream-w-160_x_240.jpg,
+                images/icrecream-w-320_x_480.jpg,
+                images/icrecream-w-640_x_960.jpg" media="(max-width:640px)">
+                <img src="images/icrecream-w-320_x_480.jpg" alt="ice cream white">
+            </picture>
+            <picture>
+                <source srcset="
+                images/woman-yellow-160_x_240.jpg,
+                images/woman-yellow-320_x_480.jpg,
+                images/woman-yellow-640_x_960.jpg" media="(max-width:640px)">
+                <img src="images/woman-yellow-320_x_480.jpg" alt="woman 2">
+            </picture>
+            <picture>
+                <source srcset="
+                images/icecream-p-160_x_240.jpg,
+                images/icecream-p-320_x_480.jpg,
+                images/icecream-p-640_x_960.jpg" media="(max-width:640px)">
+                <img src="images/icecream-p-320_x_480.jpg" alt="ice cream purple">
+            </picture>            
             <div class="squares"> <!--creates the squared "buttons" of the banner-->
                 <div class="square"></div> 
                 <div class="square"></div> 

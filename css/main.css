@@ -7,10 +7,13 @@ html{
 body{
     margin:0px;
 }
-
+.container{
+    width: 100%;
+}
 /*put some color to this area*/
 .heading{ 
-    background-color: rgb(162, 117, 204);    
+    background-color: rgb(162, 117, 204);
+      
 }
 
 .nav-bar{
@@ -41,9 +44,6 @@ body{
    margin: auto;
    position:relative;
 }
-
-
-
 
 
 
