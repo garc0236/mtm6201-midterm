@@ -3,21 +3,65 @@
 html{
     font-family:sans-serif;
 }
-/*modifies the top area of the page*/
+/*removes some space of the page*/
+body{
+    margin:0px;
+}
 
-.heading{
-    background-color: rgb(162, 117, 204);
+/*put some color to this area*/
+.heading{ 
+    background-color: rgb(162, 117, 204);    
+}
+
+.nav-bar{
+    display: flex; /*flexbox property used in parent element, because I want to use the row setup*/
+    margin:0;
+    justify-content: center; /*center the items*/
+}
+
+/*removes bullet points from li*/
+.nav-bar li { 
+    list-style-type: none;        
+}
+/*modifies properly the inside items on li as text color, margin, background color etc*/
+.nav-bar li a {
     text-decoration: none;
-    list-style-type: none;
-    
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: white;
+    font-weight:bolder;
+    margin: 30px;
+    padding: 5px 40px 5px 40px;
+    background-color: rgb(142, 102, 179);      
+}
+
+/*centers the logo in this determined area*/
+.logo{
+   display:block;
+   margin: auto;
+   position:relative;
 }
 
 
 
 
 
+/*styles footer area*/
 
-.footer{
+.footer {
     background-color: black;
     height: 60px;
+    width: 100%;
 }
+/*styles paragraph's footer area*/
+.pfooter {
+    color: white;
+    text-align:end;
+    margin: 20px;
+    padding-top: 15px;
+}
+/*adds copyright symbol*/
+.pfooter::before {
+content: "\00a9";
+}
+
