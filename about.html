@@ -24,8 +24,14 @@
             </picture>        
         </header>
         <div class="content">
-            <img src="images/neon-icecream.jpg" alt="neon-figure">
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis at ex molestias cupiditate iusto, temporibus mollitia ducimus recusandae voluptatibus voluptas numquam, ea ipsa animi deserunt alias perspiciatis minima, delectus ratione</p>
+            <picture>
+                <source srcset="
+                images/neon-icecream-240_x_360.jpg,
+                images/neon-icecream-480_x_720.jpg 2x,
+                images/neon-icecream-960_x_1440.jpg 3x" media="(max-width:960px)">
+                <img class="logo" src="images/neon-icecream-480_x_720.jpg" alt="neon lights">
+            </picture>            
+            <div class="about"><p class="pabout">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis at ex molestias cupiditate iusto, temporibus mollitia ducimus recusandae voluptatibus voluptas numquam, ea ipsa animi deserunt alias perspiciatis minima, delectus ratione Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni nostrum nulla esse debitis nam inventore sapiente mollitia incidunt repudiandae architecto minima, cum consequatur harum. Fugit voluptatem tempora facere quis laboriosam?</p>
             </div>
         </div>
     </div>
