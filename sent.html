@@ -15,7 +15,13 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <img src="images/creamsy-logo.png" alt="logo">        
+            <picture>
+                <source srcset="
+                images/creamsy-logo-240_x_185.png,
+                images/creamsy-logo-480_x_370.png 2x,
+                images/creamsy-logo-960_x_741.png 3x" media="(max-width:960px)">
+                <img class="logo" src="images/creamsy-logo-480_x_370.png" alt="logo">
+            </picture>        
         </header>
         <div>
             <h1>Thanks for contacting us, we'll be back in brief!</h1>

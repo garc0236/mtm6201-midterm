@@ -24,7 +24,13 @@
             </picture>        
         </header>
         <div class="form">
-            <img src="images/send-us.jpg" alt="send us">
+            <picture class="sendus">
+                <source srcset="
+                images/send-us-240_x_160.jpg,
+                images/send-us-480_x_320.jpg 2x,
+                images/send-us-960_x_641.jpg 3x" media="(max-width:960px)">
+                <img class="logo" src="images/send-us-480_x_320.jpg" alt="man sending message">
+            </picture>                
             <form action="sent.html" method="get"> <!--creates form for contacting-->
                 <h2>Send us a message</h2>
                 <div class="dname"> <!--adding box for name area with a class-->
