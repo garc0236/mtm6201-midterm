@@ -38,7 +38,7 @@ body{
 .nav-bar li a {
     text-decoration: none;
     font-family:'Courier New', Courier, monospace;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
     font-weight:bolder;
     margin: 30px;
@@ -56,12 +56,13 @@ body{
 .banner { /*applies grid property to build banner area*/
    background-color: var(--dark-purple);
    display: grid;
-   grid-template-rows: 500px;
-   grid-template-columns: 350px 350px 350px 350px 350px;
+   grid-template-rows: 250px;
+   grid-template-columns: 350px ;
 }
 
 .banner picture { /*controls images in the banner area*/
-    margin: 20px 90px 10px 90px;    
+    margin: 20px 20px 20px 20px;
+    justify-self: center;    
 }
 
 .squares{ /*controls yellow squares "buttons" in the banner area*/
@@ -80,7 +81,19 @@ body{
 
 .articles{ /*controls 3rd area - articles and balloons*/
     background-color: var(--light-purple); 
-    padding: 100px;  
+    padding: 100px 200px 400px 200px;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 200px;
+    
+    
+}
+
+.balloons{
+    display: grid;
+    grid-template-rows: 400px;
+    grid-template-columns: 50px 50px 50px;
+   
 }
 
 .first{ /*controls box area of the paragraph*/
@@ -89,19 +102,41 @@ body{
     height: 250px;        
 }
 
-.first p{ /*controls he paragraph*/
+.first p{ /*controls the 1st paragraph*/
     color: white;
     font-size: 20px;
     text-align:justify;
     padding:20px;
+    margin: 0;
     
 }
 
 
+.wrapper{
+    display: flex;
+    justify-content:end;
+    
+    
+}
+.second{ /*controls box area of the paragraph*/
+    background-color: var(--dark-purple);
+    width: 400px;
+    height: 600px;
+    padding-right: 300px;
 
+   
+        
+}
 
-
-
+.second p{ /*controls the  2nd paragraph*/
+    color: white;
+    font-size: 20px;
+    text-align:justify;
+    padding:20px;
+    margin:0;  
+    
+    
+}
 
 
 /*styles footer area*/
@@ -127,3 +162,53 @@ body{
 content: "\00a9";
 }
 
+
+/* -------END HOME PAGE-----*/
+
+/*-----MEDIA QUERIES-----*/
+
+@media screen and (min-width: 641px){
+    .nav-bar li a {
+        text-decoration: none;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 30px;
+        color: white;
+        font-weight:bolder;
+        margin: 30px;
+        padding: 5px 40px 5px 40px;
+        background-color: var(--dark-purple);      
+    }
+
+    .banner { /*applies grid property to build banner area*/
+        background-color: var(--dark-purple);
+        display: grid;
+        grid-template-rows: 500px;
+        grid-template-columns: 350px 350px 350px 350px 350px;
+     }
+     
+     .banner picture { /*controls images in the banner area*/
+         margin: 20px 90px 10px 90px;    
+     }
+     
+     .squares{ /*controls yellow squares "buttons" in the banner area*/
+         display: flex;
+         justify-content: center;
+         background-color: var(--dark-purple);
+     
+     }
+     .articles{ /*controls 3rd area - articles and balloons*/
+        background-color: var(--light-purple); 
+        padding: 100px 200px 400px 200px;
+        display: grid;
+        grid-template-rows: 300px;
+        grid-template-columns: 200px 500px 870px;
+        
+        
+    }
+    
+    .balloons{
+        display: grid;
+        grid-template-rows: 300px;
+        grid-template-columns: 150px 150px 150px;
+    }
+}
