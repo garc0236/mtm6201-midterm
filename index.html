@@ -15,7 +15,6 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
             <picture>
                 <source srcset="
                 images/creamsy-logo-240_x_185.png,
@@ -28,36 +27,36 @@
             <picture class="frame"> <!--the images, scales at different screen sizes, and resolution-->
                 <source srcset="
                 images/icecream-y-160_x_240.jpg,
-                images/icecream-y-320_x_480.jpg,
-                images/icecream-y-640_x_960.jpg" media="(max-width:640px)">
+                images/icecream-y-320_x_480.jpg 2x,
+                images/icecream-y-640_x_960.jpg 3x" media="(max-width:640px)">
                 <img src="images/icecream-y-320_x_480.jpg" alt="ice cream yellow">
             </picture>
             <picture class="frame">
                 <source srcset="
                 images/woman-purple-160_x_240.jpg,
-                images/woman-purple-320_x_480.jpg,
-                images/woman-purple-640_x_960.jpg" media="(max-width:640px)">
+                images/woman-purple-320_x_480.jpg 2x,
+                images/woman-purple-640_x_960.jpg 3x" media="(max-width:640px)">
                 <img src="images/woman-purple-320_x_480.jpg" alt="woman 1">
             </picture>
             <picture class="frame">
                 <source srcset="
                 images/icrecream-w-160_x_240.jpg,
-                images/icrecream-w-320_x_480.jpg,
-                images/icrecream-w-640_x_960.jpg" media="(max-width:640px)">
+                images/icrecream-w-320_x_480.jpg 2x,
+                images/icrecream-w-640_x_960.jpg 3x" media="(max-width:640px)">
                 <img src="images/icrecream-w-320_x_480.jpg" alt="ice cream white">
             </picture>
             <picture class="frame">
                 <source srcset="
                 images/woman-yellow-160_x_240.jpg,
-                images/woman-yellow-320_x_480.jpg,
-                images/woman-yellow-640_x_960.jpg" media="(max-width:640px)">
+                images/woman-yellow-320_x_480.jpg 2x,
+                images/woman-yellow-640_x_960.jpg 3x" media="(max-width:640px)">
                 <img src="images/woman-yellow-320_x_480.jpg" alt="woman 2">
             </picture>
             <picture class="frame">
                 <source srcset="
                 images/icecream-p-160_x_240.jpg,
-                images/icecream-p-320_x_480.jpg,
-                images/icecream-p-640_x_960.jpg" media="(max-width:640px)">
+                images/icecream-p-320_x_480.jpg 2x,
+                images/icecream-p-640_x_960.jpg 3x" media="(max-width:640px)">
                 <img src="images/icecream-p-320_x_480.jpg" alt="ice cream purple">
             </picture>            
         </div> 
@@ -71,13 +70,20 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, earum asperiores. Amet veniam architecto quo fugiat maxime distinctio, molestias impedit saepe dignissimos! Harum minus fugit atque odit commodi quaerat molestias.</p>
             </div>
             <div class="ballons">
-                <img src="images/about-balloon.png" alt="about-ballon">
+                <picture>
+                    <source srcset="
+                    images/about-balloon-480_x_370.png,
+                    images/about-balloon-960_x_741.png 2x,
+                    images/about-balloon-1920_x_1483.png 3x">
+                    <img src="images/about-balloon-960_x_741.png" alt="about-ballon">
+                </picture>
                 <img src="images/order-balloon.png" alt="order-balloon">
                 <img src="images/contact-balloon.png" alt="contact-balloon">
 
             </div>
             <div class="second">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, earum asperiores. Amet veniam architecto quo fugiat maxime distinctio, molestias impedit saepe dignissimos! Harum minus fugit atque odit commodi quaerat molestias.</p>
+
             </div>
         </div>
     </div>

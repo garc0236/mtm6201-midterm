@@ -16,6 +16,7 @@ body{
 }
 .container{
     width: 100%;
+    
 }
 /*put some color to this area*/
 .heading{ 
@@ -66,7 +67,8 @@ body{
 .squares{ /*controls yellow squares "buttons" in the banner area*/
     display: flex;
     justify-content: center;
-    background-color: var(--dark-purple);     
+    background-color: var(--dark-purple);
+
 }
 
 .square{ /*controls INDIVIDUAL squares "buttons" in the banner area*/
@@ -76,8 +78,24 @@ body{
     background-color: rgb(255, 217, 0);      
 }
 
+.articles{ /*controls 3rd area - articles and balloons*/
+    background-color: var(--light-purple); 
+    padding: 100px;  
+}
 
+.first{ /*controls box area of the paragraph*/
+    background-color: var(--dark-purple);
+    width: 300px;
+    height: 250px;        
+}
 
+.first p{ /*controls he paragraph*/
+    color: white;
+    font-size: 20px;
+    text-align:justify;
+    padding:20px;
+    
+}
 
 
 
@@ -92,6 +110,10 @@ body{
     background-color: black;
     height: 60px;
     width: 100%;
+}
+
+.footer p{ /*eliminates some white space in the footer area*/
+    margin: 0px;
 }
 /*styles paragraph's footer area*/
 .pfooter {
