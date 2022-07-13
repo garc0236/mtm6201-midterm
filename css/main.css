@@ -337,5 +337,38 @@ h2{
     
  }
 
+/*SENT PAGE*/
+.thx{
+    background-color: var(--dark-purple);
+}
+.thanks{
+    text-align:center;
+    margin: 0;
+    padding: 300px;
+    font-size: 80px;
+    color: white;
+}
 
+.tran {
+    animation-name: tran;
+    animation-duration: 10s;
+    transition:all;
+}
 
+@keyframes tran{
+    25%{
+        transform: rotateZ(180deg);
+        opacity: 25%;
+        color:rgb(220, 192, 69) ;
+    }
+
+    50%{
+         transform:rotateZ(-180deg);
+         opacity: 50%;
+         color: var(--light-purple);
+    }
+
+    100%{
+        transform: rotateZ(-360deg);
+    }
+}
