@@ -52,10 +52,36 @@ body{
    position:relative;
 }
 
-.banner {
+.banner { /*applies grid property to build banner area*/
    background-color: var(--dark-purple);
-
+   display: grid;
+   grid-template-rows: 500px;
+   grid-template-columns: 350px 350px 350px 350px 350px;
 }
+
+.banner picture { /*controls images in the banner area*/
+    margin: 20px 90px 10px 90px;    
+}
+
+.squares{ /*controls yellow squares "buttons" in the banner area*/
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-purple);     
+}
+
+.square{ /*controls INDIVIDUAL squares "buttons" in the banner area*/
+    width:30px;
+    height: 30px;
+    margin: 10px;
+    background-color: rgb(255, 217, 0);      
+}
+
+
+
+
+
+
+
 
 
 
