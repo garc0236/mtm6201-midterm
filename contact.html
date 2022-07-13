@@ -8,14 +8,20 @@
     <link href=css/main.css rel="stylesheet">
 </head>
 <body>
-    <div class="container"> 
+    <div class="container"> <!--creates a class to manipulate general layout-->
         <header class="heading">
-            <ul class="nav-bar"> 
+            <ul class="nav-bar"> <!--creates an unordered list for nav bar purposes-->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <img src="images/creamsy-logo.png" alt="logo">        
+            <picture>
+                <source srcset="
+                images/creamsy-logo-240_x_185.png,
+                images/creamsy-logo-480_x_370.png 2x,
+                images/creamsy-logo-960_x_741.png 3x" media="(max-width:960px)">
+                <img class="logo" src="images/creamsy-logo-480_x_370.png" alt="logo">
+            </picture>        
         </header>
         <div class="form">
             <img src="images/send-us.jpg" alt="send us">
